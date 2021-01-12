@@ -1,0 +1,13 @@
+%http://wmii.uwm.edu.pl/~mariusz/pu/Matlab/12obliczenia/z14maxim4.html
+
+clc, clear
+R=10
+syms a 
+syms b
+syms c %gdzie maksymalna wartosc a,b i c wynosi 2R
+%musza zachodzic nierownosci a+b<c b+c<a a+c<b
+P=(a*b*c)/(4*R)
+f=x1+x2
+pV=diff(f,x)
+r=solve(pV,x)
+x=eval(r(1))
